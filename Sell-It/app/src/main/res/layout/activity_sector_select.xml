@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector1"
+            android:id="@+id/buttonSector1" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector4"
+            android:id="@+id/buttonSector4" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector7"
+            android:id="@+id/buttonSector7" />
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:text="Sector2"
+        android:id="@+id/buttonSector2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:text="Sector5"
+        android:id="@+id/buttonSector5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:text="Sector8"
+        android:id="@+id/buttonSector8" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector3"
+            android:id="@+id/buttonSector3" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector6"
+            android:id="@+id/buttonSector6" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:text="Sector9"
+            android:id="@+id/buttonSector9" />
+    </LinearLayout>
+
+</LinearLayout>
