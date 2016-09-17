@@ -16,19 +16,16 @@ android:orientation="horizontal">
             android:layout_width="match_parent"
             android:layout_height="172dp"
             android:text="Sector1"
-            android:id="@+id/buttonSector1" />
+            android:id="@+id/buttonSector1"
+            android:layout_weight="0.50" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="172dp"
             android:text="Sector4"
-            android:id="@+id/buttonSector4" />
+            android:id="@+id/buttonSector4"
+            android:layout_weight="0.50" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="172dp"
-            android:text="Sector7"
-            android:id="@+id/buttonSector7" />
     </LinearLayout>
 
     <LinearLayout
@@ -42,21 +39,17 @@ android:orientation="horizontal">
         android:layout_width="match_parent"
         android:layout_height="172dp"
         android:text="Sector2"
-        android:id="@+id/buttonSector2" />
+        android:id="@+id/buttonSector2"
+        android:layout_weight="0.50" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="172dp"
         android:text="Sector5"
-        android:id="@+id/buttonSector5" />
+        android:id="@+id/buttonSector5"
+        android:layout_weight="0.50" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="172dp"
-        android:text="Sector8"
-        android:id="@+id/buttonSector8" />
-
-</LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -69,19 +62,16 @@ android:orientation="horizontal">
             android:layout_width="match_parent"
             android:layout_height="172dp"
             android:text="Sector3"
-            android:id="@+id/buttonSector3" />
+            android:id="@+id/buttonSector3"
+            android:layout_weight="0.50" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="172dp"
             android:text="Sector6"
-            android:id="@+id/buttonSector6" />
+            android:id="@+id/buttonSector6"
+            android:layout_weight="0.50" />
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="172dp"
-            android:text="Sector9"
-            android:id="@+id/buttonSector9" />
     </LinearLayout>
 
 </LinearLayout>
