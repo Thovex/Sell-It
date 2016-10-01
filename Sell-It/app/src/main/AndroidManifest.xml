@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nl.hku.studenthome.sell_it">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Jobbr"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainMenu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settings" />
+        <activity
+            android:name=".SectorSelect"
+            android:label="Sector Select" />
+        <activity android:name=".SectorItem" />
+        <activity android:name=".PortfolioCheck"
+            android:label="Portfolio Check"/>
+        <activity android:name=".SollicitatieGesprek"
+            android:label="Sollicitatie Gesprek"></activity>
+    </application>
+
+</manifest>

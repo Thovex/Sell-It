@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="QuestionsArray">
+        <item>Stan Claassen waar de fuck zijn mijn vragen jij ..?</item>
+        <item>Vraag 2</item>
+        <item>Vraag 3</item>
+        <item>Vraag 4</item>
+        <item>Vraag 5</item>
+    </string-array>
+</resources>
