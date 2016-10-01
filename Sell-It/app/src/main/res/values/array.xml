@@ -1,10 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="QuestionsArray">
-        <item>Stan Claassen waar de fuck zijn mijn vragen jij ..?</item>
-        <item>Vraag 2</item>
-        <item>Vraag 3</item>
-        <item>Vraag 4</item>
-        <item>Vraag 5</item>
+    <string-array name="SectorHorecaVragen">
+        <item>SectorHorecaVragen Vraag 1</item>
+        <item>SectorHorecaVragen Vraag 2</item>
+        <item>SectorHorecaVragen Vraag 3</item>
+        <item>SectorHorecaVragen Vraag 4</item>
+        <item>SectorHorecaVragen Vraag 5</item>
+    </string-array>
+
+    <string-array name="SectorOnderwijsVragen">
+        <item>SectorOnderwijsVragen Vraag 1</item>
+        <item>SectorOnderwijsVragen Vraag 2</item>
+        <item>SectorOnderwijsVragen Vraag 3</item>
+        <item>SectorOnderwijsVragen Vraag 4</item>
+        <item>SectorOnderwijsVragen Vraag 5</item>
+    </string-array>
+
+    <string-array name="SectorGrafischeVragen">
+        <item>SectorGrafischeVragen Vraag 1</item>
+        <item>SectorGrafischeVragen Vraag 2</item>
+        <item>SectorGrafischeVragen Vraag 3</item>
+        <item>SectorGrafischeVragen Vraag 4</item>
+        <item>SectorGrafischeVragen Vraag 5</item>
+    </string-array>
+
+    <string-array name="SectorTuinbouwVragen">
+        <item>SectorTuinbouwVragen Vraag 1</item>
+        <item>SectorTuinbouwVragen Vraag 2</item>
+        <item>SectorTuinbouwVragen Vraag 3</item>
+        <item>SectorTuinbouwVragen Vraag 4</item>
+        <item>SectorTuinbouwVragen Vraag 5</item>
+    </string-array>
+
+    <string-array name="SectorZorgVragen">
+        <item>SectorZorgVragen Vraag 1</item>
+        <item>SectorZorgVragen Vraag 2</item>
+        <item>SectorZorgVragen Vraag 3</item>
+        <item>SectorZorgVragen Vraag 4</item>
+        <item>SectorZorgVragen Vraag 5</item>
+    </string-array>
+
+    <string-array name="SectorBouwVragen">
+        <item>SectorBouwVragen Vraag 1</item>
+        <item>SectorBouwVragen Vraag 2</item>
+        <item>SectorBouwVragen Vraag 3</item>
+        <item>SectorBouwVragen Vraag 4</item>
+        <item>SectorBouwVragen Vraag 5</item>
     </string-array>
 </resources>

@@ -1,33 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <LinearLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        android:weightSum="1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:gravity="center">
 
-    <Button
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Selecteer training"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="25dp" />
+
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sollicitatie Gesprek"
+        android:src="@drawable/iconsolicitatie"
+        android:background="@null"
         android:id="@+id/buttonSG"
         android:onClick="modeSelection"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
 
-        android:layout_weight="0.5" />
-
-    <Button
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Portfolio Check"
+        android:src="@drawable/iconportfoliocheck"
+        android:background="@null"
         android:id="@+id/buttonPC"
-        android:layout_weight="0.5"
         android:onClick="modeSelection"
         android:layout_gravity="center_horizontal" />
 </LinearLayout>

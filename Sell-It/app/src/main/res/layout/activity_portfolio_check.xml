@@ -1,12 +1,238 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="nl.hku.studenthome.sell_it.PortfolioCheck">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="50dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressBar"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Persoonlijke Gegevens"
+                android:id="@+id/a"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/a"
+                android:inputType="textPersonName"
+                android:hint="Volledige naam"
+                android:id="@+id/b" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/b"
+                android:inputType="text"
+                android:hint="Leeftijd"
+                android:id="@+id/c" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c"
+                android:inputType="text"
+                android:hint="Geslacht"
+                android:id="@+id/d" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/d"
+                android:inputType="text"
+                android:hint="Woonplaats"
+                android:id="@+id/e" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/e"
+                android:inputType="text"
+                android:hint="Huidige functie/opleiding"
+                android:id="@+id/f" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/f"
+                android:inputType="text"
+                android:hint="Werksector"
+                android:id="@+id/g" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/g"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Opleiding"
+                android:id="@+id/h"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/h"
+                android:inputType="text"
+                android:hint="Naam school"
+                android:id="@+id/i" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/i"
+                android:inputType="text"
+                android:hint="Studierichting"
+                android:id="@+id/j" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/j"
+                android:inputType="text"
+                android:hint="Jaren (bijv. 2010-2014)"
+                android:id="@+id/k" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/k"
+                android:layout_marginTop="25dp"
+                android:inputType="text"
+                android:hint="Naam school"
+                android:id="@+id/l" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/l"
+                android:inputType="text"
+                android:hint="Studierichting"
+                android:id="@+id/m" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/m"
+                android:inputType="text"
+                android:hint="Jaren (bijv. 2010-2014)"
+                android:id="@+id/n" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/n"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Werkervaring"
+                android:id="@+id/o"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:gravity="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/o"
+                android:inputType="text"
+                android:hint="Functie werk"
+                android:id="@+id/p" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/p"
+                android:inputType="text"
+                android:hint="Bedrijfsnaam"
+                android:id="@+id/q" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q"
+                android:inputType="text"
+                android:hint="Jaren gewerkt"
+                android:id="@+id/r" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/r"
+                android:inputType="text"
+                android:hint="Beschrijving werk"
+                android:id="@+id/s" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/s"
+                android:layout_marginTop="25dp"
+                android:inputType="text"
+                android:hint="Functie werk"
+                android:id="@+id/t" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t"
+                android:inputType="text"
+                android:hint="Bedrijfsnaam"
+                android:id="@+id/u" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/u"
+                android:inputType="text"
+                android:hint="Jaren gewerkt"
+                android:id="@+id/v" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v"
+                android:inputType="text"
+                android:hint="Beschrijving werk"
+                android:id="@+id/w" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

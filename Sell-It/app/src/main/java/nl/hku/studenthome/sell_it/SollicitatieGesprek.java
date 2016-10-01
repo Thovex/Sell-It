@@ -15,36 +15,39 @@ import android.content.ActivityNotFoundException;
 import android.speech.RecognizerIntent;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class SollicitatieGesprek extends Activity {
 
-    ArrayList<String> myStringList = new ArrayList<>();
-    String[] questionsArray;
-    int currentQuestion = 0;
+    private ArrayList<String> myStringList = new ArrayList<>();
+    private String[] questionsArray;
+    private int currentQuestion = 0;
+    private int sectorId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+        Bundle b = getIntent().getExtras();
+        sectorId = b.getInt("sector");
+        fillQuestionsArray();
         setContentView(R.layout.activity_sollicitatie_gesprek);
-        questionsArray = getResources().getStringArray(R.array.QuestionsArray);
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         txtQuestionsAsked = (TextView) findViewById(R.id.txtQuestions);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
         btnSend = (ImageButton) findViewById(R.id.btnSend);
-
+        setTheme();
         txtQuestionsAsked.setText(questionsArray[currentQuestion]);
-
         btnSpeak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 promptSpeechInput();
             }
         });
-
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +56,31 @@ public class SollicitatieGesprek extends Activity {
                 }
             }
         });
+    }
+
+    private void fillQuestionsArray(){
+        switch (sectorId){
+            case 1:
+                questionsArray = getResources().getStringArray(R.array.SectorHorecaVragen);
+                break;
+            case 2:
+                questionsArray = getResources().getStringArray(R.array.SectorOnderwijsVragen);
+                break;
+            case 3:
+                questionsArray = getResources().getStringArray(R.array.SectorGrafischeVragen);
+                break;
+            case 4:
+                questionsArray = getResources().getStringArray(R.array.SectorTuinbouwVragen);
+                break;
+            case 5:
+                questionsArray = getResources().getStringArray(R.array.SectorZorgVragen);
+                break;
+            case 6:
+                questionsArray = getResources().getStringArray(R.array.SectorBouwVragen);
+                break;
+            default:
+                break;
+        }
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
@@ -116,5 +144,39 @@ public class SollicitatieGesprek extends Activity {
 
     private void setQuestions(){
         txtQuestionsAsked.setText(questionsArray[currentQuestion]);
+    }
+
+    private void setTheme() {
+        RelativeLayout background = (RelativeLayout) findViewById(R.id.sollicitatiebg);
+        ImageView character = (ImageView) findViewById(R.id.sollicitatiecharacter);
+
+        switch (sectorId){
+            case 1:
+                background.setBackgroundResource(R.drawable.bg_horeca);
+                character.setImageResource(R.drawable.char_horeca);
+                break;
+            case 2:
+                background.setBackgroundResource(R.drawable.bg_onderwijs);
+                character.setImageResource(R.drawable.char_onderwijs);
+                break;
+            case 3:
+                background.setBackgroundResource(R.drawable.bg_grafisch);
+                character.setImageResource(R.drawable.char_grafisch);
+                break;
+            case 4:
+                background.setBackgroundResource(R.drawable.bg_tuinbouw);
+                character.setImageResource(R.drawable.char_tuinbouw);
+                break;
+            case 5:
+                background.setBackgroundResource(R.drawable.bg_zorg);
+                character.setImageResource(R.drawable.char_zorg);
+                break;
+            case 6:
+                background.setBackgroundResource(R.drawable.bg_bouw);
+                character.setImageResource(R.drawable.char_bouw);
+                break;
+            default:
+                break;
+        }
     }
 }
