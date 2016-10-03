@@ -30,7 +30,8 @@
             android:label="Sollicitatie Gesprek" />
         <activity
             android:name=".PortfolioCheck"
-            android:label="@string/title_activity_portfolio_check"></activity>
+            android:label="@string/title_activity_portfolio_check" />
+        <activity android:name=".ResultsActivity"></activity>
     </application>
 
 </manifest>

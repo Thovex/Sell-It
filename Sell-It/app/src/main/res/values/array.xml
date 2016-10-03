@@ -25,11 +25,19 @@
     </string-array>
 
     <string-array name="SectorTuinbouwVragen">
-        <item>SectorTuinbouwVragen Vraag 1</item>
-        <item>SectorTuinbouwVragen Vraag 2</item>
-        <item>SectorTuinbouwVragen Vraag 3</item>
-        <item>SectorTuinbouwVragen Vraag 4</item>
-        <item>SectorTuinbouwVragen Vraag 5</item>
+        <item>Hallo, mijn naam is Fred. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Voor we beginnen, wil je wat te drinken? Koffie, thee of water?</item>
+        <item>Alsjeblieft. Goed. Laten we dan maar beginnen met een van de belangrijkste dingen; je motivatie. Waarom ben je zo geïntereseerd in deze sector?</item>
+        <item>En wat hoop je precies te bereiken in deze sector?</item>
+        <item>Heb je al ervaring in deze sector?</item>
+        <item>Heb je ook al ervaring in een andere sector?</item>
+        <item>Goed, genoeg daarover. Ik zou graag wat meer willen weten over je studie. Heb je een MBO, HBO of Universitaire opleiding gevolgd?</item>
+        <item>En was dit een opleiding die binnen deze sector valt?</item>
+        <item>Wat doe je zoal in je vrije tijd?</item>
+        <item>Interessant. En wat zou je je slechtste eigenschap noemen?</item>
+        <item>Nu we het toch over tijd hebben, hoe lang ben je eigenlijk al in de tuinbouw bezig?</item>
+        <item>We hebben het al over de sector gehad, maar wat vind je nou zo leuk aan tuinbow zelf?</item>
+        <item>Goed. En wat vind je minder leuk aan de tuinbow? Waar loop je tegen aan?</item>
+        <item>Yannick Save Me</item>
     </string-array>
 
     <string-array name="SectorZorgVragen">
@@ -47,4 +55,48 @@
         <item>SectorBouwVragen Vraag 4</item>
         <item>SectorBouwVragen Vraag 5</item>
     </string-array>
+    <integer-array name="chars">
+        <item>@drawable/char_horeca</item>
+        <item>@drawable/char_horeca2</item>
+        <item>@drawable/char_horeca3</item>
+        <item>@drawable/char_horeca4</item>
+        <item>@drawable/char_horeca5</item>
+
+        <item>@drawable/char_onderwijs</item>
+        <item>@drawable/char_onderwijs2</item>
+        <item>@drawable/char_onderwijs3</item>
+        <item>@drawable/char_onderwijs4</item>
+        <item>@drawable/char_onderwijs5</item>
+
+        <item>@drawable/char_tuinbouw</item>
+        <item>@drawable/char_tuinbouw2</item>
+        <item>@drawable/char_tuinbouw3</item>
+        <item>@drawable/char_tuinbouw4</item>
+        <item>@drawable/char_tuinbouw5</item>
+
+        <item>@drawable/char_grafisch</item>
+        <item>@drawable/char_grafisch2</item>
+        <item>@drawable/char_grafisch3</item>
+        <item>@drawable/char_grafisch4</item>
+        <item>@drawable/char_grafisch5</item>
+
+        <item>@drawable/char_tuinbouw</item>
+        <item>@drawable/char_tuinbouw2</item>
+        <item>@drawable/char_tuinbouw3</item>
+        <item>@drawable/char_tuinbouw4</item>
+        <item>@drawable/char_tuinbouw5</item>
+
+        <item>@drawable/char_zorg</item>
+        <item>@drawable/char_zorg2</item>
+        <item>@drawable/char_zorg3</item>
+        <item>@drawable/char_zorg4</item>
+        <item>@drawable/char_zorg5</item>
+
+        <item>@drawable/char_bouw</item>
+        <item>@drawable/char_bouw2</item>
+        <item>@drawable/char_bouw3</item>
+        <item>@drawable/char_bouw4</item>
+        <item>@drawable/char_bouw5</item>
+    </integer-array>
+
 </resources>

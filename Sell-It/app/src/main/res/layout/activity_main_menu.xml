@@ -22,10 +22,11 @@
         android:layout_weight="0.3">
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imageView"
-            android:src="@drawable/nuggets" />
+            android:src="@drawable/sollici_training" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -37,7 +38,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_weight="0.7"
-        android:gravity="center">
+        android:gravity="center"
+        android:weightSum="1">
 
 
         <ImageButton
@@ -58,6 +60,7 @@
             android:onClick="startSettings"
             android:src="@drawable/iconopties"
             android:layout_marginLeft="5dp" />
+
     </LinearLayout>
 
 </LinearLayout>

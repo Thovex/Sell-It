@@ -3,13 +3,15 @@ package nl.hku.studenthome.sell_it;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
-import android.content.res.Resources;
+import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.Locale;
+import java.util.Random;
 
 import android.content.ActivityNotFoundException;
 import android.speech.RecognizerIntent;
@@ -24,24 +26,48 @@ public class SollicitatieGesprek extends Activity {
 
     private ArrayList<String> myStringList = new ArrayList<>();
     private String[] questionsArray;
+    private TextToSpeech tts;
+    private TypedArray chars;
+
     private int currentQuestion = 0;
     private int sectorId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         ActionBar actionBar = getActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
+
         Bundle b = getIntent().getExtras();
         sectorId = b.getInt("sector");
+
         fillQuestionsArray();
+
         setContentView(R.layout.activity_sollicitatie_gesprek);
+
         txtSpeechInput = (TextView) findViewById(R.id.txtSpeechInput);
         txtQuestionsAsked = (TextView) findViewById(R.id.txtQuestions);
         btnSpeak = (ImageButton) findViewById(R.id.btnSpeak);
         btnSend = (ImageButton) findViewById(R.id.btnSend);
+
+        chars = getResources().obtainTypedArray(R.array.chars);
+
         setTheme();
+
         txtQuestionsAsked.setText(questionsArray[currentQuestion]);
+
+        tts=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                if(status != TextToSpeech.ERROR) {
+                    tts.setLanguage(new Locale("nl", "NL"));
+                    String toSpeak = txtQuestionsAsked.getText().toString();
+                    tts.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                }
+            }
+        });
+
         btnSpeak.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -53,6 +79,19 @@ public class SollicitatieGesprek extends Activity {
             public void onClick(View v) {
                 if (txtSpeechInput.getText() != "") {
                     promptSendInput();
+                    if (currentQuestion > 0) {
+                        tts = new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+                            @Override
+                            public void onInit(int status) {
+                                if (status != TextToSpeech.ERROR) {
+                                    tts.setLanguage(new Locale("nl", "NL"));
+                                    String toSpeak = txtQuestionsAsked.getText().toString();
+                                    tts.speak(toSpeak, TextToSpeech.QUEUE_FLUSH, null);
+                                }
+                            }
+                        });
+                        setTheme();
+                    }
                 }
             }
         });
@@ -86,6 +125,15 @@ public class SollicitatieGesprek extends Activity {
     public boolean onOptionsItemSelected(MenuItem item){
         finish();
         return true;
+    }
+
+
+    public void onPause(){
+        if(tts !=null){
+            tts.stop();
+            tts.shutdown();
+        }
+        super.onPause();
     }
 
     private TextView txtSpeechInput;
@@ -134,12 +182,14 @@ public class SollicitatieGesprek extends Activity {
             Log.v("Tag", myStringList.get(i));
         }
         txtSpeechInput.setText(null);
-        currentQuestion++;
-        if (currentQuestion==questionsArray.length) {
-            //TODO: go to results screen
+        if (currentQuestion==questionsArray.length-1) {
+            Intent intent = new Intent(this, ResultsActivity.class);
+            startActivity(intent);
         } else {
+            currentQuestion++;
             setQuestions();
         }
+
     }
 
     private void setQuestions(){
@@ -149,31 +199,33 @@ public class SollicitatieGesprek extends Activity {
     private void setTheme() {
         RelativeLayout background = (RelativeLayout) findViewById(R.id.sollicitatiebg);
         ImageView character = (ImageView) findViewById(R.id.sollicitatiecharacter);
+        Random randomizer = new Random();
+        int randomNr = randomizer.nextInt(6);
 
         switch (sectorId){
             case 1:
                 background.setBackgroundResource(R.drawable.bg_horeca);
-                character.setImageResource(R.drawable.char_horeca);
+                character.setImageResource(chars.getResourceId(randomNr, 0));
                 break;
             case 2:
                 background.setBackgroundResource(R.drawable.bg_onderwijs);
-                character.setImageResource(R.drawable.char_onderwijs);
+                character.setImageResource(chars.getResourceId(randomNr+5, 0));
                 break;
             case 3:
                 background.setBackgroundResource(R.drawable.bg_grafisch);
-                character.setImageResource(R.drawable.char_grafisch);
+                character.setImageResource(chars.getResourceId(randomNr+10, 0));
                 break;
             case 4:
                 background.setBackgroundResource(R.drawable.bg_tuinbouw);
-                character.setImageResource(R.drawable.char_tuinbouw);
+                character.setImageResource(chars.getResourceId(randomNr+15, 0));
                 break;
             case 5:
                 background.setBackgroundResource(R.drawable.bg_zorg);
-                character.setImageResource(R.drawable.char_zorg);
+                character.setImageResource(chars.getResourceId(randomNr+20, 0));
                 break;
             case 6:
                 background.setBackgroundResource(R.drawable.bg_bouw);
-                character.setImageResource(R.drawable.char_bouw);
+                character.setImageResource(chars.getResourceId(randomNr+25, 0));
                 break;
             default:
                 break;
