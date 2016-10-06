@@ -1,59 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="SectorHorecaVragen">
-        <item>SectorHorecaVragen Vraag 1</item>
-        <item>SectorHorecaVragen Vraag 2</item>
-        <item>SectorHorecaVragen Vraag 3</item>
-        <item>SectorHorecaVragen Vraag 4</item>
-        <item>SectorHorecaVragen Vraag 5</item>
+        <item>Hallo, mijn naam is Suzanne Vork. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou om in de horeca te werken?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de horeca?</item>
+        <item>Heb je al ervaring in de horeca? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan de horeca. Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
 
     <string-array name="SectorOnderwijsVragen">
-        <item>SectorOnderwijsVragen Vraag 1</item>
-        <item>SectorOnderwijsVragen Vraag 2</item>
-        <item>SectorOnderwijsVragen Vraag 3</item>
-        <item>SectorOnderwijsVragen Vraag 4</item>
-        <item>SectorOnderwijsVragen Vraag 5</item>
+        <item>Hallo, mijn naam is Juliette de Graaf. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou om in de onderwijs te werken?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de onderwijs?</item>
+        <item>Heb je al ervaring in de onderwijs? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan het onderwijs. Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
 
     <string-array name="SectorGrafischeVragen">
-        <item>SectorGrafischeVragen Vraag 1</item>
-        <item>SectorGrafischeVragen Vraag 2</item>
-        <item>SectorGrafischeVragen Vraag 3</item>
-        <item>SectorGrafischeVragen Vraag 4</item>
-        <item>SectorGrafischeVragen Vraag 5</item>
+        <item>Hallo, mijn naam is Roy Brussen. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou om grafisch design te doen?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de Grafische industrie?</item>
+        <item>Heb je al ervaring in de Grafische Industrie? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan grafisch design. Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
 
     <string-array name="SectorTuinbouwVragen">
-        <item>Hallo, mijn naam is Fred. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Voor we beginnen, wil je wat te drinken? Koffie, thee of water?</item>
-        <item>Alsjeblieft. Goed. Laten we dan maar beginnen met een van de belangrijkste dingen; je motivatie. Waarom ben je zo geïntereseerd in deze sector?</item>
-        <item>En wat hoop je precies te bereiken in deze sector?</item>
-        <item>Heb je al ervaring in deze sector?</item>
-        <item>Heb je ook al ervaring in een andere sector?</item>
-        <item>Goed, genoeg daarover. Ik zou graag wat meer willen weten over je studie. Heb je een MBO, HBO of Universitaire opleiding gevolgd?</item>
-        <item>En was dit een opleiding die binnen deze sector valt?</item>
-        <item>Wat doe je zoal in je vrije tijd?</item>
-        <item>Interessant. En wat zou je je slechtste eigenschap noemen?</item>
-        <item>Nu we het toch over tijd hebben, hoe lang ben je eigenlijk al in de tuinbouw bezig?</item>
-        <item>We hebben het al over de sector gehad, maar wat vind je nou zo leuk aan tuinbow zelf?</item>
-        <item>Goed. En wat vind je minder leuk aan de tuinbow? Waar loop je tegen aan?</item>
-        <item>Yannick Save Me</item>
+        <item>Hallo, mijn naam is Joost van Dijk. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou in de tuinbouw te werken?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de tuinbouw?</item>
+        <item>Heb je al ervaring in de tuinbouw? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan tuinbouw. Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
 
     <string-array name="SectorZorgVragen">
-        <item>SectorZorgVragen Vraag 1</item>
-        <item>SectorZorgVragen Vraag 2</item>
-        <item>SectorZorgVragen Vraag 3</item>
-        <item>SectorZorgVragen Vraag 4</item>
-        <item>SectorZorgVragen Vraag 5</item>
+        <item>Hallo, mijn naam is Aadhya Nair. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou om in de zorg te werken?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de de zorg?</item>
+        <item>Heb je al ervaring in de zorg? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan de zorg. Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
 
     <string-array name="SectorBouwVragen">
-        <item>SectorBouwVragen Vraag 1</item>
-        <item>SectorBouwVragen Vraag 2</item>
-        <item>SectorBouwVragen Vraag 3</item>
-        <item>SectorBouwVragen Vraag 4</item>
-        <item>SectorBouwVragen Vraag 5</item>
+        <item>Hallo, mijn naam is James Ngindu. Ik zal vandaag het sollicitatiegesprek afnemen. Het is vrij simpel, ik stel een aantal vragen en jij geeft zo goed mogelijk antwoord. Goed, laten we dan beginnen met een van de belangrijkere aspecten. Wat motiveerd jou om in de bouw te werken?</item>
+        <item>Oké! Wat hoop je precies te bereiken in de bouw?</item>
+        <item>Heb je al ervaring in de bouw? Zo ja, hoelang?</item>
+        <item>En heb je al ervaring in een andere werksector? Zo ja, met welke sector?</item>
+        <item>Wat is je hoogst afgeronde opleiding?</item>
+        <item>Stel je hebt een vrije dag. Hoe vul je de dag het liefst?</item>
+        <item>Wat is een sterke kern eigenschap van jou?</item>
+        <item>En een minder sterke eigenschap?</item>
+        <item>Graag zou ik wel iets meer willen weten over hoe jij je eigen toekomst aan kijkt. Waar zie jij jezelf staan over vijf jaar?</item>
+        <item>Als laatste wil ik weten wat jij het minst leuk vind aan de bouw Vervolgens zal ik de resultaten van de training bekendmaken.</item>
     </string-array>
     <integer-array name="chars">
         <item>@drawable/char_horeca</item>
@@ -67,12 +89,6 @@
         <item>@drawable/char_onderwijs3</item>
         <item>@drawable/char_onderwijs4</item>
         <item>@drawable/char_onderwijs5</item>
-
-        <item>@drawable/char_tuinbouw</item>
-        <item>@drawable/char_tuinbouw2</item>
-        <item>@drawable/char_tuinbouw3</item>
-        <item>@drawable/char_tuinbouw4</item>
-        <item>@drawable/char_tuinbouw5</item>
 
         <item>@drawable/char_grafisch</item>
         <item>@drawable/char_grafisch2</item>

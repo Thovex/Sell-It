@@ -200,7 +200,9 @@ public class SollicitatieGesprek extends Activity {
         RelativeLayout background = (RelativeLayout) findViewById(R.id.sollicitatiebg);
         ImageView character = (ImageView) findViewById(R.id.sollicitatiecharacter);
         Random randomizer = new Random();
-        int randomNr = randomizer.nextInt(6);
+        int randomNr = randomizer.nextInt(5);
+
+        Log.d(String.valueOf(randomNr),"randomNr");
 
         switch (sectorId){
             case 1:

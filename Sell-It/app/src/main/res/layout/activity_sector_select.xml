@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:orientation="horizontal">
+    android:background="@drawable/bg_menus"
+
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="0dp"
@@ -12,13 +14,30 @@ android:orientation="horizontal">
         android:orientation="vertical"
         android:weightSum="1" >
 
-        <Button
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Horeca"
+            />
+
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Horeca"
+            android:src="@drawable/sector_horeca"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:onClick="sectorSelection"
             android:id="@+id/buttonSector1"
             android:layout_weight="0.5" />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Tuinbouw"
+            />
 
         <ImageButton
             android:layout_width="match_parent"
@@ -40,18 +59,38 @@ android:orientation="horizontal">
     android:orientation="vertical"
     android:weightSum="1">
 
-    <Button
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Onderwijs"
+            />
+
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Onderwijs"
+        android:src="@drawable/sector_onderwijs"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
         android:onClick="sectorSelection"
         android:id="@+id/buttonSector2"
         android:layout_weight="0.5" />
 
-    <Button
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Zorg- en Welzijn"
+            />
+
+    <ImageButton
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Zorg- en Welzijn"
+        android:src="@drawable/sector_zorg"
+        android:background="?android:selectableItemBackground"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
         android:onClick="sectorSelection"
         android:id="@+id/buttonSector5"
         android:layout_weight="0.5" />
@@ -64,22 +103,37 @@ android:orientation="horizontal">
         android:layout_weight="1"
         android:orientation="vertical"
         android:weightSum="1" >
-
-        <Button
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Grafisch Design"
+            />
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Grafische Industrie"
+            android:src="@drawable/sector_grafisch"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:onClick="sectorSelection"
-
             android:id="@+id/buttonSector3"
             android:layout_weight="0.5" />
 
-        <Button
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="Bouwnijverheid"
+            />
+        <ImageButton
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Bouwnijver-heid"
+            android:src="@drawable/sector_bouw"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             android:onClick="sectorSelection"
-
             android:id="@+id/buttonSector6"
             android:layout_weight="0.5" />
 

@@ -5,10 +5,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Jobbr"
+        android:label="SolliciTraining"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainMenu">
+        <activity android:name=".MainMenu"
+            android:screenOrientation="landscape" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,21 +19,30 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="MainActivity" />
+            android:label="MainActivity"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".SettingsActivity"
-            android:label="Settings" />
+            android:label="Settings"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".SectorSelect"
-            android:label="Sector Select" />
-        <activity android:name=".SectorItem" />
+            android:label="Sector Select"
+            android:screenOrientation="landscape"/>
+        <activity
+            android:name=".SectorItem"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".SollicitatieGesprek"
-            android:label="Sollicitatie Gesprek" />
+            android:label="Sollicitatie Gesprek"
+            android:screenOrientation="landscape"/>
         <activity
             android:name=".PortfolioCheck"
-            android:label="@string/title_activity_portfolio_check" />
-        <activity android:name=".ResultsActivity"></activity>
+            android:label="Portfolio Check" />
+        <activity
+            android:name=".ResultsActivity"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>
